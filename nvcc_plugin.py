@@ -44,7 +44,7 @@ class NVCCPlugin(ipym.Magics):
             with open(file_path + ext, "w") as f:
                 f.write(cell)
             try:
-                subprocess.check_output([compiler, compiler_options, file_path + ext, "-o", file_path + ".out"], stderr=subprocess.STDOUT)
+                subprocess.check_output([compiler, '-I/usr/local/cuda/samples/common/inc/', '-L/usr/local/cuda/include', '-lcublas', '-lcusolver', file_path + ext, "-o", file_path + ".out"], stderr=subprocess.STDOUT)
                 print(self.run(file_path, timeit=args.timeit))
             except subprocess.CalledProcessError as e:
                 print(e.output.decode("utf8"))
