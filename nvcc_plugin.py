@@ -6,7 +6,7 @@ import tempfile
 import subprocess
 import IPython.core.magic as ipym
 
-compiler = '/usr/local/cuda/bin/nvcc'
+compiler = '/usr/local/cuda/bin/nvcc  -I /usr/local/cuda/samples/common/inc/ -L/usr/local/cuda/include -lcublas -lcusolver'
 ext = '.cu'
 
 
