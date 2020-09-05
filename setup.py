@@ -1,13 +1,13 @@
 from distutils.core import setup
 
 setup(
-    name='NVCCPlugin',
+    name='GCCPlugin',
     version='0.0.1',
-    author='Andrei Nechaev',
-    author_email='lyfaradey@yahoo.com',
-    py_modules=['nvcc_plugin'],
-    url='htpps://github.com/andreinechaev/nvcc4jupyter',
+    author='Goran Frehse',
+    author_email='goranf@gmail.com',
+    py_modules=['gcc_plugin'],
+    url='htpps://github.com/frehseg/gcc4jupyter',
     license='LICENSE',
-    description='Jupyter notebook plugin to run CUDA C/C++ code',
+    description='Jupyter notebook plugin to run C/C++ code',
     # long_description=open('README.md').read(),
 )
