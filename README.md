@@ -4,7 +4,7 @@ The goal is to compile and run C programs from Colab notebooks with minimal over
 
 To use, run the following in a Python kernel:
 ```
-!pip install git+git://github.com/frehseg/gcc4jupyter.
+!pip install git+git://github.com/frehseg/gcc4jupyter
 %load_ext gcc_plugin
 ```
 
