@@ -7,7 +7,7 @@ import subprocess
 import IPython.core.magic as ipym
 
 compiler = '/usr/bin/gcc'
-compiler_options = '-lm'
+compiler_options = '-lm -Wall -Wfatal-errors'
 ext = '.c'
 
 
