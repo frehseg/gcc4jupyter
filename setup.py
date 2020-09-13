@@ -5,7 +5,7 @@ setup(
     version='0.0.5',
     author='Goran Frehse',
     author_email='goranf@gmail.com',
-    py_modules=['gcc_plugin','add_cpp_magic'],
+    py_modules=['gcc_plugin','add_cpp_magic','solution_toggle'],
     url='htpps://github.com/frehseg/gcc4jupyter',
     license='LICENSE',
     description='Jupyter notebook plugin to run C/C++ code',
