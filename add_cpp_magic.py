@@ -1,6 +1,6 @@
 def add_cpp_to_input(lines):
     if lines:
-        if lines[0][0:2]!='%%':
+        if lines[0][0:2]!='%%' and lines[0][0:2]!='##' and lines[0][0:1]!='!':
             lines.insert(0,'%%c\n')
     return lines
 
