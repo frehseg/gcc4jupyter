@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='GCCPlugin',
-    version='0.0.3',
+    version='0.0.4',
     author='Goran Frehse',
     author_email='goranf@gmail.com',
     py_modules=['gcc_plugin','add_cpp_magic'],
