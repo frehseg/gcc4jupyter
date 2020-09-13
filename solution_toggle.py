@@ -1,6 +1,6 @@
-from IPython.display import HTML
+from IPython.display import display, HTML
 def load_ipython_extension(ipython):
-  HTML('''<script>
+  display(HTML('''<script>
   code_show=true;
   function solution_toggle() {
    if (code_show){
@@ -22,5 +22,5 @@ def load_ipython_extension(ipython):
           }
       ], 'toggle-solution');
   }
-  </script>''')
+  </script>'''))
 
