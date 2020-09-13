@@ -7,8 +7,10 @@ import subprocess
 import IPython.core.magic as ipym
 
 compiler = '/usr/bin/gcc'
-compiler_options = '-Wall -Werror -Wfatal-errors'
-linker_options = '-lm'
+linker_option = '-lm'
+compiler_option1 = '-Wall'
+compiler_option2 = '-Werror'
+compiler_option3 = '-Wfatal-errors'
 ext = '.c'
 
 
@@ -45,7 +47,7 @@ class GCCPlugin(ipym.Magics):
             with open(file_path + ext, "w") as f:
                 f.write(cell)
             try:
-                subprocess.check_output([compiler, linker_options, file_path + ext, "-o", file_path + ".out", compiler_options], stderr=subprocess.STDOUT)
+                subprocess.check_output([compiler, linker_option, file_path + ext, "-o", file_path + ".out", compiler_option1, compiler_option2, compiler_option3], stderr=subprocess.STDOUT)
                 print(self.run(file_path, timeit=args.timeit))
             except subprocess.CalledProcessError as e:
                 print(e.output.decode("utf8"))
